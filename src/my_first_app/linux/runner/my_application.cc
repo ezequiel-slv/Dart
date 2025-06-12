@@ -1,3 +1,4 @@
+/*
 #include "my_application.h"
 
 #include <flutter_linux/flutter_linux.h>
@@ -128,3 +129,4 @@ MyApplication* my_application_new() {
                                      "flags", G_APPLICATION_NON_UNIQUE,
                                      nullptr));
 }
+*/
