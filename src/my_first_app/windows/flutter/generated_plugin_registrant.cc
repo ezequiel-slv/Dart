@@ -1,4 +1,3 @@
-/*
 //
 //  Generated file. Do not edit.
 //
@@ -10,4 +9,3 @@
 
 void RegisterPlugins(flutter::PluginRegistry* registry) {
 }
-*/
