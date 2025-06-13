@@ -1,3 +1,4 @@
+/*
 #include "utils.h"
 
 #include <flutter_windows.h>
@@ -63,3 +64,4 @@ std::string Utf8FromUtf16(const wchar_t* utf16_string) {
   }
   return utf8_string;
 }
+*/
