@@ -5,6 +5,9 @@ void main() {
 }
 
 void combustivelGasto() {
+  /*
+  pag 147 d)
+  */
   print("Digite a velocidade do carro: ");
   int velocidade = int.parse(stdin.readLineSync()!);
 
@@ -15,7 +18,7 @@ void combustivelGasto() {
 
   double litros_usados = distancia / 12;
 
-  print("Velocidade: $velocidade");
-  print("Distancia: $distancia");
-  print("Litros gastos na viagem: $litros_usados");
+  print("Velocidade: $velocidade km/h");
+  print("Distancia: $distancia km");
+  print("Litros gastos na viagem: ${litros_usados.toStringAsFixed(1)}L");
 }
