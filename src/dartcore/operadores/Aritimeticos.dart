@@ -24,7 +24,7 @@ void operadoresAritimeticos(){
 
   int resto = num1 % num2;
   print('Resto de ' + num1.toString() + '/' + num2.toString() + ' é: ' + resto.toString());
-  
+
   if(num1 % num2 == 0){
     print('é par');
   }else{
