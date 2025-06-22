@@ -12,6 +12,7 @@ void distributiva(){
   int c = 10;
   int d = 7;
 
+  print('Adição');
   int soma1 = a + b;
   print(soma1);
   int soma2 = a + c;
@@ -27,6 +28,7 @@ void distributiva(){
 
   print('-------');
 
+  print('Mulitiplicação');
   int mult = a * b;
   print(mult);
   int mult2 = a * c;
