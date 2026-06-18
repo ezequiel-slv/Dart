@@ -55,7 +55,7 @@ void opNot(){
 
 void opShiftRight(){
   print("Operador SHIFT RIGHT (>>)");
-  // (>>) shift right: desloca o valor binário para a direita adicionando um zero ou mais
+  // (>>) shift right: desloca o valor binário para a direita adicionando um zero ou mais à esquerda
   var shiftRight = 42 >> 1;
   print(42.toRadixString(2).padLeft(8, '0'));
   print(shiftRight);
@@ -64,7 +64,7 @@ void opShiftRight(){
 
 void opShiftLeft(){
   print("Operador SHIFT LEFT (<<)");
-  // (<<) shift right: desloca o valor binário para a esquerda adicionando quantos um zero ou mais
+  // (<<) shift right: desloca o valor binário para a esquerda adicionando um zero ou mais à direita
   var shiftLeft = 42 << 1;
   print(42.toRadixString(2).padLeft(8, '0'));
   print(shiftLeft);
