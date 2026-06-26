@@ -1,6 +1,5 @@
 void main(){
   print("---- switch ----\n");
-
   switch01();
   switch02();
   switch03();
