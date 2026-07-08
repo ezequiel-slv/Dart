@@ -1,9 +1,13 @@
 void main(){
-  int valor;
-  // print(valor.isEven); // aqui o null safety entra em ação
-  
+  int valor = 10;
+  print(valor.isEven); // aqui o null safety entra em ação
+
   /*
-  O Null Safety informa o erro antes de rodar o código
-  Informando que aquela ação irá causar um erro
+    isEven: serve para informar se um valor inteiro é par (true) ou impar (false)
+   */
+
+  /*
+    O Null Safety informa o erro antes de rodar o código
+    Informando que aquela ação irá causar um erro
    */
 }
