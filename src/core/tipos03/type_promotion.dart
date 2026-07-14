@@ -1,3 +1,4 @@
+
 void main(){
   print(objetoToString("Ezequiel"));
   print(letrasNome("Ezequiel", null));
@@ -19,5 +20,23 @@ List<String> letrasNome(String nome, String? sobrenome){
     // um valor nullable pode ser non-nullabe, exceto o contrário
   }
   return letras;
+
+
+}
+
+String? nome;
+
+void opBang(){
+  print('---------');
+  nome = 'Ezequiel';
+  if(nome != null ){
+    // print(nome.length); // ----> Erro
+
+    /* aqui o flow-alisys não consegue acessar o conteudo da variável
+      por está fora do escopo
+
+     */
+    print(nome!.length); // aqui é forcada um casting, mesmo que a viarivel esteja fora do escopo
+  }
 }
 
