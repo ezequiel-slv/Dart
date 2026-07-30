@@ -13,4 +13,10 @@ void main(){
 
   //Faça
   print('Nota: $nota');
+
+  //Em vez de
+  print('Nota: ${nota}');
+
+  //Faça
+  print('Nota: $nota');
 }
