@@ -4,7 +4,7 @@ void main(){
   var a = getValCanonizado();
   var b = getValCanonizado();
 
-  print('identificaçã: ${identical(a, b)}'); // retorna true
+  print('identificação: ${identical(a, b)}'); // retorna true
 
 // ambas as constantes foram compiladas e armazenadas no mesmo objeto
 // objeto: getValCanonizado()
