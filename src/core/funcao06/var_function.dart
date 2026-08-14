@@ -9,5 +9,6 @@ Function sobreNome = (String sNome) => print('Sobre nome: $sNome'); // outra for
 void main(){
   ola('Ezequiel'); // chamada da função
   sobreNome('Silva Lima');
+  sobreNome('${sobreNome.runtimeType}');
   ola('${nome.runtimeType}'); // nome sem valor ao parâmetro é null
 }
