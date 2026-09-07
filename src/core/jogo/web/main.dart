@@ -1,9 +1,12 @@
-import 'package:web/web.dart' as web;
+import 'package:jogo/src/partida.dart';
 
-void main() {
-  final now = DateTime.now();
-  final element = web.document.querySelector('#output') as web.HTMLDivElement;
-  element.textContent =
-      'The time is ${now.hour}:${now.minute} '
-      'and your Dart web app is running!';
+void main(){
+  final partida = configurarPartida();
 }
+
+Partida configurarPartida() {
+  return Partida()..criarRegra(tesoura, acao: 'corta', perdedor: papel)
+      ..criarRegra(tesoura, acao: 'cobre', perdedor: pedra)
+      ..criarRegra(papel, acao: 'refuta', perdedor: pedra);
+}
+
