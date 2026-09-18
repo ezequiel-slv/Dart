@@ -7,6 +7,15 @@ late web.HTMLDivElement divResultado;
 void main(){
     inicializarReferencias();
   final partida = configurarPartida();
+
+  for (final opcao in opcoes) {
+      divOpcoes.append(
+          web.HTMLImageElement()
+          ..className = 'opcao'
+          ..src = 'web/images/$opcao.png'
+          ..height = 120,
+      );
+  }
 }
 
 void inicializarReferencias() {
