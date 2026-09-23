@@ -1,3 +1,7 @@
+import 'dart:math';
+
+import 'package:jogo/src/resultado.dart';
+
 const pedra = 'Pedra';
 const papel = 'Papel';
 const tesoura = 'Tesoura';
@@ -14,5 +18,17 @@ class Partida{
       regras[vencedor] = {};
     }
     regras[vencedor]![acao] = perdedor;
+  }
+
+  String escolherPc(){
+    int index = Random().nextInt(5);
+    return opcoes[index];
+  }
+
+  Resumo iniciar({required String humano}){
+    final pc = escolherPc();
+    if(humano == pc){
+      return Resumo(Resultado.empate, '$humano empata com $pc');
+    }
   }
 }
