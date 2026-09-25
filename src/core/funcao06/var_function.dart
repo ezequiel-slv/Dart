@@ -1,4 +1,4 @@
-import '../tipos03/type_promotion.dart';
+import '../02_tipos/type_promotion.dart';
 
 var ola = (String nome){ // variável que guarda parâmetros
   print('Nome: $nome'); // imprime o parametro no próprio escopo
