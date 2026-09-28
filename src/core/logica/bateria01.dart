@@ -1,7 +1,13 @@
+import 'dart:io';
+
 void main(){
   exe01();
   exe02();
   exe03();
+  exe04();
+  exe05();
+  exe06();
+  exe07();
 }
 
 void exe01(){
@@ -50,3 +56,77 @@ void exe03(){
   var dev = {'Nome: $nome,', 'idade: $idade, ', 'Altura: $altura', peso};
   print(dev);
 }
+
+void exe04(){
+  /*
+  Exercício 4: Conversão de Tipos Escreva um programa que converta um valor double em int e outro valor int em double.
+  Exiba os resultados das conversões e explique a diferença entre conversão explícita e implícita.
+  Dica: procure por type casting em Dart.
+   */
+
+  double valorDouble = 5.55;
+  int valorInt = valorDouble.toInt();
+
+  print('valorDouble: (${valorDouble.runtimeType}) convertido para int: (${valorInt.runtimeType})');
+
+  int inteiro = 30;
+  double valDouble = inteiro.toDouble();
+
+  print('inteiro (${inteiro.runtimeType}) convertido para double: (${valDouble.runtimeType})');
+}
+
+void exe05(){
+  /*
+  Exercício 5: Operações Aritméticas
+  
+  Desenvolva um programa que declare duas variáveis int e realize as
+  operações de soma, subtração, multiplicação, divisão e módulo entre elas. Exiba os resultados de cada
+  operação.
+   */
+  
+  int num1 = 10;
+  int num2 = 5;
+  
+  int soma = num1 + num2;
+  int subtracao = num1 - num2;
+  int multiplicacao = num1 * num2;
+  double divisao = num1 / num2;
+  int modulo = num1 % num2;
+  
+  print('Soma: $soma');
+  print('Subtração: $subtracao');
+  print('Multiplicação: $multiplicacao');
+  print('Divisão: $divisao');
+  print('Modulo: $modulo');
+}
+
+void exe06(){
+  /*
+  Exercício 6: Constantes
+  Crie um programa que utilize a palavra-chave final para declarar uma constante que
+  representa a velocidade da luz no vácuo. Tente alterar o valor da constante e observe o comportamento do
+  compilador.
+   */
+
+  final double velLuz = 299_792_458;
+
+  print('Velocidade da luz por segudo: $velLuz');
+
+  // velLuz = 300_000_000;
+  // código acima causa erro
+}
+
+void exe07(){
+  /*
+  Exercício 7: Entrada de Dados
+  Escreva um programa que leia um número inteiro e um número decimal do teclado e,
+  em seguida, exiba a soma desses números no console. Dica: utilize o pacote/classe Scanner.
+   */
+
+  print('Digite seu nome: ');
+  String nome = stdin.readLineSync().toString();
+
+  print('Nome: $nome');
+}
+
+
