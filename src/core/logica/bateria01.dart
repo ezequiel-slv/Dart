@@ -1,13 +1,16 @@
 import 'dart:io';
 
 void main(){
-  exe01();
-  exe02();
-  exe03();
-  exe04();
-  exe05();
-  exe06();
-  exe07();
+  // exe01();
+  // exe02();
+  // exe03();
+  // exe04();
+  // exe05();
+  // exe06();
+  // exe07();
+  // exe08();
+  // exe09();
+  exe10();
 }
 
 void exe01(){
@@ -123,10 +126,58 @@ void exe07(){
   em seguida, exiba a soma desses números no console. Dica: utilize o pacote/classe Scanner.
    */
 
-  print('Digite seu nome: ');
-  String nome = stdin.readLineSync().toString();
+  print('Digite um número: ');
+  int num1 = int.parse(stdin.readLineSync()!);
 
-  print('Nome: $nome');
+  print('Digite outro número: ');
+  double num2 = double.parse(stdin.readLineSync()!);
+
+  print('Primeiro número: $num1');
+  print('Segundo número: $num2');
+
+  print('Soma: ${num1 + num2}');
 }
 
+void exe08(){
+  /*
+  Exercício 8: Strings e Concatenação
+  Crie um programa que peça ao usuário para digitar seu nome e sobrenome. O programa deve exibir uma mensagem
+  de boas-vindas concatenando o nome e o sobrenome do usuário.
+   */
 
+  stdout.write('Digite seu primeiro nome: ');
+  String primieroNome = stdin.readLineSync().toString();
+
+  stdout.write('Digite seu sobrenome: ');
+  String segundoNome = stdin.readLineSync().toString();
+
+  String nomeCompleto = primieroNome + " " + segundoNome;
+
+  print('Bem vindoo $nomeCompleto');
+}
+
+var varGlobal = 'Variável Global';
+
+void exe09(){
+  /*
+  Exercício 9: Tipos de Variáveis
+  Escreva um programa que declare variáveis locais e globais (dentro de uma classe). Inicialize e exiba o valor
+  de ambas as variáveis no console. Dica: as variáveis globais ficam fora do método main.
+   */
+  var varLocal = 'Variável Local';
+
+  print('Essa variável é global: $varGlobal');
+  print('Essa variável é local: $varLocal');
+}
+
+void exe10(){
+  /*
+  Exercício 10: Formatação de Saída
+  Desenvolva um programa que exiba o valor de uma variável double com duas casas decimais. Utilize formatação
+  para garantir que o valor seja exibido corretamente.
+   */
+
+  double num = 43.567;
+  
+  print(num.toStringAsFixed(1));
+}
