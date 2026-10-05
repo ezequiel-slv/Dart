@@ -3,7 +3,10 @@ import 'dart:io';
 void main() {
   // comparacaoSimples();
   // verificacaoParidade();
-  maiorDeTres();
+  // maiorDeTres();
+  // elegibilidade();
+  //  verIntervalo();
+   compStrings();
 }
 
 void comparacaoSimples() {
@@ -72,4 +75,53 @@ void maiorDeTres() {
   }
 
   print('$maior é o maior número');
+}
+
+void elegibilidade(){
+  stdout.write('Qual sua idade? ');
+  int idade = int.parse(stdin.readLineSync()!);
+
+  if(idade >= 18){
+    print('Permitido votar');
+  }else{
+    print('Não é permitodo votar');
+  }
+}
+
+void verIntervalo(){
+  /*
+  Exercício 20: Verificação de Intervalo
+
+  Escreva um programa que leia um número inteiro e verifique se ele está
+  entre 10 e 20 (inclusive). Exiba uma mensagem informando se o número está dentro ou fora do intervalo.
+  */
+
+  stdout.write('digite um número? ');
+  int num = int.parse(stdin.readLineSync()!);
+
+  if((num >= 10) & (num <= 20)){
+    print('$num está entre 10 a 20');
+  }else{
+    print('$num está fora do intervalo de 10 a 20');
+  }
+}
+
+void compStrings(){
+  /*
+  Exercício 21: Comparação de Strings
+  Desenvolva um programa que leia duas strings do usuário e verifique se
+  elas são iguais. Exiba uma mensagem informando o resultado da comparação.
+   */
+
+  stdout.write('Dgite uma palavra: ');
+  String palavra1 = stdin.readLineSync()!;
+
+  stdout.write('Dgite outra palavra: ');
+  String palavra2 = stdin.readLineSync()!;
+
+  if(palavra1 == palavra2){
+    print('As palavras são iguais');
+  }else{
+    print('As palavras são diferentes');
+  }
 }
