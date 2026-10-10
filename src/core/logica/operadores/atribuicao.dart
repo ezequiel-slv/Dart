@@ -5,7 +5,7 @@ void main(){
   // atribAntesDepois();
   // somaAcumulada();
   // prePosIncremento();
-  opCompostos();
+  // opCompostos();
 }
 
 void atribuicaoSimples(){
