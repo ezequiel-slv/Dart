@@ -7,7 +7,10 @@ void main(){
   // maioridade();
   // notas();
   // comparacao();
-  temperatura();
+  // temperatura();
+  // notaEscolar();
+  // compIdade();
+  // velocidade();
 }
 
 void positivoNegativo(){
@@ -140,5 +143,65 @@ void temperatura(){
     print('Clima está agradável');
   }else if(temperatura > 30){
     print('Clima está quente');
+  }
+}
+
+void notaEscolar(){
+  /*
+  Exercício 38: Verificação de Nota Escolar
+  Enunciado:  Desenvolva um programa que leia uma nota escolar (de 0 a 10) e classifique-a como "Insuficiente" (menor que 5), "Suficiente" (entre 5 e 7) ou "Bom" (maior que 7).
+   */
+
+  stdout.write('Digite a nota escolar (0 a 10): ');
+  double nota = double.parse(stdin.readLineSync()!);
+
+  if(nota < 5){
+    print('Nota insuficiente');
+  }else if(nota >= 5 && nota <= 7){
+    print('Nota suficiente');
+  }else if(nota > 7){
+    print('Nota boa');
+  }
+}
+
+void compIdade(){
+  /*
+  Exercício 39: Comparação de Idades 
+  Enunciado:  Escreva um programa que leia as idades de duas pessoas e exiba quem é mais velho. Caso as idades sejam iguais, exiba uma mensagem informando que as duas pessoas têm a mesma idade.
+  */
+
+  stdout.write('Digite a idade da Maria pessoa: ');
+  int maria = int.parse(stdin.readLineSync()!);  
+
+  stdout.write('Digite a idade da João pessoa: ');
+  int joao = int.parse(stdin.readLineSync()!); 
+
+  if(maria > joao){
+    print('Maria é mais velha que João');
+  }else if(joao > maria){
+    print('João é mais velho que Maria');
+  }else{
+    print('João tem a mesma idade que Maria');
+  }
+}
+
+void velocidade(){
+  /*
+  Exercício 40: Avaliação de Velocidade 
+  Enunciado: Crie um programa que leia a velocidade de um veículo e exiba uma mensagem dizendo se o veículo está dentro do limite de velocidade (até 60 km/h), acima do limite (entre 61 km/h e 80 km/h) ou muito acima do limite (acima de 80 km/h).
+  */
+
+  final int velMax = 60;
+  final int acimaVelLimite = 80;
+
+  stdout.write('Digite a velocidade: ');
+  int velocidade = int.parse(stdin.readLineSync()!);
+
+  if(velocidade <= velMax){
+    print('Velocidade está dentro do limite');
+  }else if(velocidade > velMax && velocidade <= acimaVelLimite){
+    print('Velocidade está acima do normal');
+  }else{
+    print('Velocidade está muito acima do limite');
   }
 }
